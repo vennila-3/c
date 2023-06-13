@@ -1,0 +1,9 @@
+INTRO:
+        The C Language is developed by Dennis Ritchi
+        creating system applications that directly interact with the hardware devices 
+        C programming is considered as the base for other programming languages, that is why it is known as mother language. 
+     Mother language  --most of the programming languages follow C syntax, for example, C++, Java, C#, etc.
+     System programming language-- used to create system software   because it is useful for writing system programs (interface between the hardware and user application) like compiler, device driver,vBIOS(Basic input/output system), linker, assembler etc.
+     Procedure-oriented programming language  --This programming language makes use of a step by step approach for breaking down a task into a collection of routines (or subroutines) and variables by following a sequence of instructions. It carries out each step systematically in order so that a computer easily gets to understand what to do
+     Structured programming language
+     Mid-level programming language
