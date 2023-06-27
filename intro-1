@@ -42,3 +42,20 @@ if(t==1)printf("-1");
 
     return 0;
 }
+
+
+
+keywords
+
+signed unsigned
+short int float double long typeof sizeof   
+auto extern static const
+enum register
+if else
+switch case break default
+for while do goto continue 
+return voltaile
+
+
+
+struct union 
