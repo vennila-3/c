@@ -1,0 +1,121 @@
+binary
+decimal
+octal
+hexa decimal
+
+     ---------------BINARY
+
+i) binary to decimal
+int main() {
+    int binary;
+    scanf("%d",&binary);
+    int ans=0,base=1;
+    while(binary!=0)
+    {
+        int r=binary%10;
+        ans=ans+(r*base);
+        binary/=10;
+        base=base*2;
+    }
+    printf("%d",ans);
+
+    return 0;
+}
+
+ii) binary to hexa decimal
+ int binary;
+    scanf("%d",&binary);
+    int ans=0,base=1;
+    while(binary!=0)
+    {
+        int r=binary%10;
+        ans=ans+(r*base);
+        binary/=10;
+        base=base*2;
+    }
+    printf("%lx ",ans);
+
+iii)binary to octal
+int binary;
+    scanf("%d",&binary);
+    int ans=0,base=1;
+    while(binary!=0)
+    {
+        int r=binary%10;
+        ans=ans+(r*base);
+        binary/=10;
+        base=base*2;
+    }
+    printf("%lo",ans);
+
+
+
+---------------------------DECIMAL
+i)decimal to binary
+int binary;
+    scanf("%d",&binary);
+    int ans[100],i=0;
+    while(binary!=0)
+    {
+        ans[i]=binary%2;
+        binary/=2;
+         i++;
+    }
+    for(int j=i-1;j>=0;j--)
+    printf("%d",ans[j]);
+
+ii)decimal to hexa decimal
+  printf("%x",x);
+        or 
+
+   long decimalnum, quotient, remainder;
+    int i, j = 0;
+    char hexadecimalnum[100];
+    printf("Enter decimal number: ");
+    scanf("%ld", &decimalnum);
+    quotient = decimalnum;
+    while (quotient != 0)
+    {
+        remainder = quotient % 16;
+        if (remainder < 10)
+            hexadecimalnum[j++] = 48 + remainder;
+        else
+            hexadecimalnum[j++] = 55 + remainder;
+        quotient = quotient / 16;
+    }
+    for (i = j; i >= 0; i--)
+            printf("%c", hexadecimalnum[i]);
+
+iii)decimal to  octal    
+int main() {
+       int x=16;
+     printf("%o",x);  // 16/8 =2 remiander 0 so o/p= 20  if 10 means 10/8 =1 remainder=2   quation 1 so 1/8=0 remainder 1 so 12
+    return 0;
+}
+
+-----------------------------HEXA DECIMAL
+i)hexa decimal to decimal
+// C program to demonstrate hexadecimal to decimal
+// conversion using format specifier
+
+ii)hexa decimal to binary
+
+
+#include <stdio.h>
+
+int main()
+{
+
+	int n;
+	// taking input from user
+	scanf("%x", &n);
+	
+	// printing the decimal number
+	printf("%d", n);
+	return 0;
+}
+
+ii)hexa to binary
+
+
+   
