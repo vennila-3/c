@@ -1,0 +1,76 @@
+what is structure 
+    it is hetrogeniyas  we can store different data type datas
+    structure is user define data type  it just a data type
+    store different different data type variable grouped together and under single name
+    basic for linked list like dsa cconcept
+    it just template only this will show  to compiler how the structure is they layout
+    doesnot occupy memory not allocate when ever we create     struct studet s1  then only memory allocate for struct
+
+ how to declare
+     struct student(it is tag and it is optional){
+     int r,
+     char b,
+     float c,
+     };
+
+  rules
+     semicolon is important in end of the struct
+     variable name shouldn't same
+     shouldn't define inside the struct int a=90; wrong
+     
+DECLARING VARIABLE /OBJECT OF STRUCTURE
+         struuct student s1;    or   struuct student s1,s2;
+         or
+        struct {
+        int r,
+        char b,
+        float c,
+        }s1,s2;(2 objects names arre s1,s2)   if we use this type we canot create object in main function like   struuct student s1; and we cant add extra elements in structure
+
+
+INITALIZATION & ACCESSING  OF STRUCTURE
+        compile time initalization
+        runtime initalization
+
+    i)compile time initalization
+    struct studet {
+        int r,
+        char b,
+        float c,
+        }; or we can initalize here also  s1={1,'g',8.6},....;
+        void main(){
+        struct student s={1,'b',5.4}; //data type order should be same based on structure    if we didnot initalize it allocate 0 for int 0.0 for sloat null for string
+         printf("%d",s.r);
+        }
+
+      struct s;
+      struct s2={}
+      s=s2 //it can copy the value if both data types are same only its appplicable
+      individual element can compare but whole struct doesnot compare   like(s1<s2)
+
+  ii)RUNTIME 
+         using scanf
+         scanf("%d",&s.r);
+
+//-----------------------------  ARRAY OF STRUCTURE    ---------------------------------------------------//
+ if we want to many datas means we move to this type
+ 
+        struct studet {
+        int r,
+        char b,    // these are structure members
+        float c,
+        };
+        struct student s[80];   // structure variable  it holds 80 datas  (size =80)
+
+         accessing ===>   s[0].r
+
+// -------------  pointer to structure  ------------------------------//
+
+        
+        
+        
+    
+     
+  
+       
+     
