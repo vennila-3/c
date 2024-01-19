@@ -4,7 +4,7 @@ what is structure
     store different different data type variable grouped together and under single name
     basic for linked list like dsa cconcept
     it just template only this will show  to compiler how the structure is they layout
-    doesnot occupy memory not allocate when ever we create     struct studet s1  then only memory allocate for struct
+    doesnot occupy memory not allocate when ever when we create  variable for that then only it occupy tthe memory    struct studet s1  then only memory allocate for struct
 
  how to declare
      struct student(it is tag and it is optional){
@@ -117,8 +117,26 @@ student s={1,'g',7.8};      // it is an alias name
 }
        
 //--------------------  STRUCTURE PADDING -------------------------//
+momoery now days    ******** word addressable  *********************
+atomatically done by the compiler
+alingment the data increase the speed
+it allocate 4 4 bytes
 
-   
+char a,
+char b,
+int c
+
+memory alignment
+ a=>1 b=>1 and it leaves 2 space 
+ c=>4 it takes 8 bytes 
+ so it takes lot of memory       with structure padding
+
+To reduce the memory wastage to declare a structure  in increasing datat type size order then only it decrease the memory watage and properoly use.
+
+
+//--------------------  Structure packing-------------------------//
+w
+
 //--------------------  UNION IN C -------------------------//
 it is like structure  which contain different different elements which have   different different data type
 user define data type
