@@ -19,14 +19,32 @@ what is structure
      shouldn't define inside the struct int a=90; wrong
      
 DECLARING VARIABLE /OBJECT OF STRUCTURE
-         struuct student s1;    or   struuct student s1,s2;
+       struuct student s1;    or   struuct student s1,s2;
          or
         struct {
         int r,
         char b,
         float c,
         }s1,s2;(2 objects names arre s1,s2)   if we use this type we canot create object in main function like   struuct student s1; and we cant add extra elements in structure
-
+ LOCAL DECLARATION;
+     struct studet {
+        int r,
+        char b,
+        float c,
+        }; or we can initalize here also  s1={1,'g',8.6},....;
+        void main(){
+        struct student s={1,'b',5.4}; //data type order should be same based on structure    if we didnot initalize it allocate 0 for int 0.0 for sloat null for string
+         printf("%d",s.r);
+        }
+GLOBAL DECLARATION;
+        struct studet {
+        int r,
+        char b,
+        float c,
+        };
+       struct student s1={1,'k',9.8};
+       void main(){}
+          
 
 INITALIZATION & ACCESSING  OF STRUCTURE
         compile time initalization
@@ -65,12 +83,67 @@ INITALIZATION & ACCESSING  OF STRUCTURE
          accessing ===>   s[0].r
 
 // -------------  pointer to structure  ------------------------------//
+pointer to structure  which pointing to the address address of memory block that stores the structure
+     struct studet * ptr //because pointer data type should be same as members data type structure data type is struct so here struct
 
-        
-        
-        
-    
+struct student {
+int r,
+char n[10],
+float b,
+};
+struct student s={1,"vennila",1.2};
+void main(){
+struct student *ptr=&s;
+printf("%d",ptr->r);   //-> is used as pointer the value like dot operator   or(*ptr).r  == ptr->r
+}
+
+// -----------------  typedef   -----------------//
+
+it used to create own name of the  data type
+
+typedef int Integer
+    main(){
+    Integer a=2;
+    }
      
-  
+   typedef struct student {
+     int r,
+    char n[10],
+    float b,
+   } student ; 
+
+main(){
+student s={1,'g',7.8};      // it is an alias name
+}
        
-     
+//--------------------  STRUCTURE PADDING -------------------------//
+
+   
+//--------------------  UNION IN C -------------------------//
+it is like structure  which contain different different elements which have   different different data type
+user define data type
+
+union  student {
+     int r,  4
+    char n[10], 10
+    float b, 4
+   }  ; 
+main(){
+union student s={1,'g',7.8}; }
+
+  both are same difference between struct and union is
+memory allocation  
+ i)structure   -----10+4+4 =18
+ ii)union   ------ 10  only one memory block share memory 
+
+DRAWBACK:
+     1,97,9.00 it is shared memory so  first memory have value 1  and it change to 97 after it change to 97 .000
+     last value should be in the memory  but in sturcture each memory have unique h=value
+ADVANTAGE
+     now a days union not used it used in previous year on that time memory very expensive so introduce union
+     it takes less memory
+     if we want access individual element union is better sharing of memory
+     we can use pointer to union also
+
+
+
