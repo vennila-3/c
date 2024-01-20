@@ -1,0 +1,75 @@
+pointers
+    it is special variable store address of another variable and pointing to the variable
+    int *ptr   [* dereference operator or indirect operator]
+    always contain address
+    it is derived data type
+OPERATORS:
+     int* p -> p is pointer which have address of integer type of data type
+     pointer also have address for self   
+SIZE:    
+    (Pointer size is depend on machine 
+      in 16 bit compiler --> 2 byte
+      in 32 bit compiler --> 4 byte
+      in 64 bit compiler --> 16 byte)  
+DECLARATION:
+     int* p;
+INITALIZATION
+     P=&a;( & address of operator or reference operator)
+   
+  EXAMPLE:
+
+      i) int *p;
+      p=(&a,&b) means it store the b  address of the variable
+      p=&a,&b means it atore the a e address
+      
+      ii) we can access pointer as
+        *p or *(&p)
+        
+     iii) 
+     int a=10,b=5;
+     int *p=&a;
+     *p=*q it is illegal   showing error
+
+     int *p=&a;
+     int *q=*b;
+     *p=*q is legal 
+
+      float *p=&a     / error illegal a is int type /
+
+//-----------------------     DOUBLE POINTER ---------------------  \\  
+    pointer pointing to another pointer (pointer to pointer)
+    int *p=a (pointer to variable)
+    int **q=&p (pointer to pointer)
+    int ***r=&q
+    int ***r =&p ---> it illegal it cant acces more than one level
+    int *q=25 ----> it is illegal because  *(&q)  it pointing to *p .*p contains a address we cant change the address into integer **q=25 is possibile
+    int **q=&a ----> illegal
+
+//----------------------------- POINTER ARITHMETIC --------------------------\\
+uncrement /decrement/ adddition  /sub / comparision  
+ADD:
+  int  a=8,b=9;
+  int *p=&a,*q=&b;
+  *p+*q is illegal **
+   p=p+2; legal   (adress of a + size(2)*) now address is changed
+    
+   int a[]={1,2,3,4,5,6,7,8}; 
+   int *q=&a[0]
+   q=q+2; now pointing [0+2] 3 
+
+SUB:
+  we can subtract between pointers and integer also it means when we use in same array and there is no use of finding 2 different array
+    int a[]={1,2,3,4,5,6,7,8}; 
+    int *p = a // it pointing first element in array
+   int *q=&a[3]
+   int *p=&a[0];
+   d=q-p 4-1=3;  //it sub between value
+   q=q-2 // it sub between  address 
+
+INCREMENT /DECREMENT:
+   
+    
+
+
+
+    
