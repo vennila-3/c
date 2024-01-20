@@ -55,6 +55,7 @@ ADD:
     
    int a[]={1,2,3,4,5,6,7,8}; 
    int *q=&a[0]
+   a[0]=q is illegal
    q=q+2; now pointing [0+2] 3 
 
 SUB:
@@ -67,9 +68,32 @@ SUB:
    q=q-2 // it sub between  address 
 
 INCREMENT /DECREMENT:
-   
-    
+   p++; pointing to next element    *p++  return and  then performa addition   *++p add and then return    right to left associate table
+   printf("%d %d",*p++,*++p) first *++p will excute right to left
+   like we can peroform decrement also pre post inc/dec
 
+//--------------------------------------------- INTERVIEW QUESTION -------------------------------//
+I) 
+int a=10;
+int *p=&a;
+*p=20; now a will be 20
+
+if we declare
+const int a=10;
+const int *p=&a;
+*p=20;        // error
+
+II)
+char str="welcome to jenny's lecture"
+char *p=str;
+printf("%c",*p);
+printf("%c",*(p++ + 1));   // o/p is first return p and value change to (e) and +1 now     o/p is e
+printf("%c",*((ptr-- +5)-1)+3) ;        // first ptr--   ptr is e and change ptr to w      second e is 101 means 101+5 =106 106 is  it is o third 106-1 105 is m   fourth is m+3  it is not index it is an alphabetic order m n o p   o/p is p
+printf("%c",*(++ptr+10)-32) ;      // o/p  e to 10 th position is  j  -32 means it convert into caps j  so o.p is J
+
+
+    
+//------------------- VOID POINTER ---------------------------------------
 
 
     
